@@ -10,7 +10,7 @@ class RestaurantsController < ApplicationController
     if @restaurant.save
       redirect_to restaurant_path(@restaurant)
     else
-      ap @restaurant.errors
+      # ap @restaurant.errors
       render :new
     end
   end
